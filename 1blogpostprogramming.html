@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,
+    300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,
+    700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,
+    500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,
+    800italic,900italic" rel="stylesheet" />
+    
+
+  </head>
+
+  <main>
+    <body style="background-color: #ffffff;">
+
+
+ <!--------Blog--------> 
+
+      <div class="backtoblog">
+        <a href="blog.html">Back to blog page</a>
+      </div>
+
+      <div class="blogheader">
+        <hr class="line" style="height: 20px;">
+        <h1>My programming experience</h1>
+        <hr style="height: 1px; color: black; background-color: black; ">
+      </div>
+
+
+
+  <!--------My programming experience--------> 
+  <p>Ik heb in mijn laatste twee jaar middelbare school informatica gehad. Met coderen hebben we alleen python behandeld. Voor mijn eindexamen het ik met python het spel pong gecodeerd.</p>
+
+  <p>
+    De Code voor pong <br>
+    # Basis
+    import turtle
+    wn = turtle.Screen()
+    wn.title("Pong door Roos")
+    wn.bgcolor("black")
+    wn.setup(width=800, height=600)
+    wn.tracer(0)
+    <br>
+
+    # Score
+    score_a = 0
+    score_b = 0
+    <br>
+
+    # Paddle A
+    paddle_a = turtle.Turtle()
+    paddle_a.speed(0)
+    paddle_a.shape("square")
+    paddle_a.color("white")
+    paddle_a.shapesize(stretch_wid=5, stretch_len=1)
+    paddle_a.penup()
+    paddle_a.goto(-350, 0)
+    <br>
+
+    # Paddle B
+    paddle_b = turtle.Turtle()
+    paddle_b.speed(0)
+    paddle_b.shape("square")
+    paddle_b.color("white")
+    paddle_b.shapesize(stretch_wid=5, stretch_len=1)
+    paddle_b.penup()
+    paddle_b.goto(350, 0)
+    <br>
+
+    # Ball
+    ball = turtle.Turtle()
+    ball.speed(0)
+    ball.shape("square")
+    ball.color("white")
+    ball.penup()
+    ball.goto(0, 0)
+    <br>
+
+    ball.dx = 0.1
+    ball.dy = 0.1
+    <br>
+
+    # Pen
+    pen = turtle.Turtle()
+    pen.speed(0)
+    pen.color("white")
+    pen.penup()
+    pen.hideturtle()
+    pen.goto(0,260)
+    pen.write("Player A: 0   Player B: 0", align="center", font=("Courier", 24, "normal"))
+    <br>
+
+    # Functies
+    def paddle_a_up():
+        y = paddle_a.ycor()
+        y += 20
+        paddle_a.sety(y)
+        <br>
+
+    def paddle_a_down():
+        y = paddle_a.ycor()
+        y -= 20
+        paddle_a.sety(y)
+        <br>
+
+
+    def paddle_b_up():
+        y = paddle_b.ycor()
+        y += 20
+        paddle_b.sety(y)
+        <br>
+
+    def paddle_b_down():
+        y = paddle_b.ycor()
+        y -= 20
+        paddle_b.sety(y)
+        <br>
+
+    # Keyboard bindings
+    wn.listen()
+    wn.onkeypress(paddle_a_up, "w")
+    wn.onkeypress(paddle_a_down, "s")
+    wn.onkeypress(paddle_b_up, "Up")
+    wn.onkeypress(paddle_b_down, "Down")
+    <br>
+
+    # Hoofdspel loop
+    while True:
+        wn.update()
+        <br>
+
+      
+    # Bal bewegen
+        ball.setx(ball.xcor() + ball.dx)
+        ball.sety(ball.ycor() + ball.dy)
+        <br>
+
+        # Grens herkennen
+        if ball.ycor() > 290:
+            ball.sety(290)
+            ball.dy *= -1
+            <br>
+
+        if ball.ycor() < -290:
+            ball.sety(-290)
+            ball.dy *= -1
+            <br>
+
+        if ball.xcor() > 390:
+            ball.goto(0,0)
+            ball.dx *= -1
+            score_a += 1
+            pen.clear()
+            pen.write("Player A: {}   Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+            <br>
+            
+        if ball.xcor() < -390:
+            ball.goto(0,0)
+            ball.dx *= -1
+            score_b += 1
+            pen.clear()
+            pen.write("Player A: {}   Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+            <br>
+
+        
+    #Balk en bal botsing
+        if ball.xcor() > 340 and ball.xcor() < 350 and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
+            ball.setx(340)
+            ball.dx *= -1
+            <br>
+
+
+        if ball.xcor() < -340 and ball.xcor() > -350 and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
+            ball.setx(-340)
+            ball.dx *= -1
+            <br>
+
+  </p>
+
+
+
+      
+        
+    </body>
+  
+  </main>
+
+  
+</html>

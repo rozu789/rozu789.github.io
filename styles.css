@@ -143,7 +143,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: #00000000;
     color: #ffffff;
-    padding: 15px 20000px;
+    padding: 15px 20px;
     font-size: 100px;
     font-family: Montserrat;
     font-weight: 300;
@@ -271,6 +271,7 @@ body {
 #indexcolumns {
     text-align: center;
     background-color: #ffffff;
+    height: 500px;
 
 }
 
@@ -346,14 +347,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #00000096;
-    color: #ffffff;
-    padding: 15px 20000px;
+    color: #ffffff;   
     font-size: 100px;
     font-family: Montserrat;
     font-weight: 300;
     text-align: center;
     border: 3px solid 0000007c;
     border-radius: 20px;
+    padding-left: 100%;
+    padding-right: 100%;
 }
 
 
@@ -494,28 +496,49 @@ body {
 }
 
 
+
+
+
+
+
 #quarter1 {
     background-color: #000000;
-    color: #ffffff;
+    padding: 20px;
 
 }
 
 #quarter2 {
     background-color: #ffffff;
+    padding: 20px;
 
+}
+
+#quarter2 li{
+    padding: 20px;
 }
 
 #quarter3 {
     background-color: #000000;
+    padding: 20px;
 
 }
+
+#quarter3 li{
+    padding: 20px;
+}
+
+
+
 
 #quarter4 {
     background-color: #ffffff;
+    padding: 20px;
 
 }
 
-
+#quarter4 li{
+    padding: 20px;
+}
 
 
 .quartertitleblack {
@@ -530,17 +553,365 @@ body {
 
 
 
+#tablequarter13 {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #ffffff;
+    text-align: left;
 
-/* -------Dashboard-------  */
+}
+
+#tablequarter13 td {
+    border: 2px solid #ffffff;
+    text-align: left;
+    padding: 30px;
+    font-size: 25px;
+    font-family: Montserrat;
+    color: #ffffff;
+}
+
+#tablequarter13 th {
+    border: 2px solid #ffffff;
+    text-align: left;
+    padding: 30px;
+    font-size: 25px;
+    font-family: Montserrat;
+    color: #ffffff;
+}
+
+
+
+
+#tablequarter24 {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000000;
+    text-align: left;
+}
+
+#tablequarter24 td {
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 30px;
+    font-size: 25px;
+    font-family: Montserrat;
+    
+}
+
+#tablequarter24 th {
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 30px;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------faq-------  */
+#faqq li {
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-align: left;
+}
+
+#faqq p {
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+
+
 
 .summaryfaq {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.3;
+    text-indent: 0px;
+    word-spacing: 0.5px;
+    letter-spacing: 0.0000001px;
+}
+
+.detailsfaq {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+/* -------Blog-------  */
+#blogpage {
+    margin-top: 40px;
+    height: 1000px;
+}
+
+#blogpage h3 {
+    color: #000000;
+    font-weight: 800;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+#blogpage p {
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+#blogpage a {
     color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+#blogpage a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 15px;
+    border: 4px solid black;
+    margin-left: 30px;
+}
+
+
+#blogstudychoice {
+    width: 32%;
+    float: left;
+    background-color: #ffffff;
+    margin: 5px;
+    padding-bottom: 30px;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 25px;
+    min-height: 350px;
+
+}
+
+#blogpersonalswot {
+    width: 32%;
+    float: left;
+    background-color: #ffffff;
+    margin: 5px;
+    padding-bottom: 30px;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 25px;
+    min-height: 350px;
+
+}
+
+#blogprogramming {
+    width: 32%;
+    float: left;
+    background-color: #ffffff;
+    margin: 5px;
+    padding-bottom: 30px;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 25px;
+    min-height: 350px;
+
+}
+
+#blogfirstfeedback {
+    width: 32%;
+    float: left;
+    background-color: #ffffff;
+    margin: 5px;
+    padding-bottom: 30px;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 25px;
+    min-height: 350px;
+
+}
+
+#blogictfieldwork {
+    width: 32%;
+    float: left;
+    background-color: #ffffff;
+    margin: 5px;
+    padding-bottom: 30px;
+    border-color: #000000;
+    border-width: 5px;
+    border-radius: 25px;
+    min-height: 350px;
+
+}
+
+
+
+
+/*blog page*/
+
+.backtoblog {
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.backtoblog a {
+    padding: 30px;
+    color: #000000;
+    text-decoration: none;
     font-family: Montserrat;
     font-size: 25px;
 }
 
-.detailsfaq {
-    color: #ffffff;
+.backtoblog a:hover {
+    padding: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 800;
 }
+
+.blogheader {   
+    margin: 0;
+}
+
+.blogheader h1{   
+    color: #000000;
+    margin: 0;
+    font-family: DM sans;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*blog page: SWOT*/
+#swot h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+#swot p{
+    text-align: center;
+    font-family: DM sans;
+    margin: 0;
+    padding: 0;
+}
+
+#swot2 p{
+    text-align: center;
+    font-family: DM sans;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+#swot li{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: DM sans;
+}
+
+#s {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#w {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#o {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+#t {
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+/*blog page: study choice*/
+#studychoice h3 {
+    text-align: center;
+    color: #000000;  
+    margin: 0; 
+    padding: 0;
+    
+}
+
+#studychoice h2 {
+    text-align: center;
+    color: #000000;  
+    margin: 0; 
+    padding: 0;
+    
+}
+
+#studychoice p {
+    text-align: center;
+    color: #000000;  
+    margin: 0; 
+    padding: 0;
+    
+}
+
+#studychoiceact {
+    
+}
+
+
+#studychoicemotivation {
+    width: 49%;
+    float: left;
+}
+
+#afterstudy {
+    width: 49%;
+    float: right;
+}
+
+
+
