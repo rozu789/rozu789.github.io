@@ -3,9 +3,6 @@ html {
     scroll-behavior: smooth;
   }
 
-
-
-
 /* -------text-------  */
 h1 {
     font-family: Montserrat;
@@ -73,9 +70,6 @@ p {
     font-size: 75px;
 }
 
-
-
-
 /* -------line-------  */
 .line{
     height:3.4px;
@@ -104,23 +98,11 @@ p {
 
 
 
-
-
-
-
-
-
 /* -------body-------  */
 body {
    margin:0;
    background-color: #000000;
 }
-
-
-
-
-
-
 
 
 /* -------Header-------  */
@@ -198,15 +180,13 @@ body {
     padding: 0;
 }
 
-
 .footer a {
     color: #000000;
     text-decoration: none;
 }
 
 .footer a:hover {
-    font-weight: 800;
-    font-size: 15px;
+    font-weight: 700;
 }
 
 .footerlinkspersoonlijk summary {
@@ -219,10 +199,6 @@ body {
     font-weight: 500;
     padding-top: 10px;
 }
-
-
-
-
 
 
 
@@ -251,21 +227,12 @@ body {
 }
 
 .navbar a:hover {
-    font-weight: 600;
-    font-size: 35px;
+    font-weight: 400;
 }
 
 .navlogo {
     float: right;
 }
-
-
-
-
-
-
-
-
 
 /* -------Index-------  */
 #indexcolumns {
@@ -288,7 +255,6 @@ body {
 }
 
 
-
 #indexcolumnleft {
     width: 50%;
     float: left;
@@ -302,6 +268,7 @@ body {
     background-color: #ffffff;
     
 }
+
 
 
 /* -------Profile-------  */
@@ -339,7 +306,6 @@ body {
     
 
 
-
 /*Header profile*/
 .overlay-text-profile {
     position:absolute;
@@ -360,11 +326,7 @@ body {
 
 
 
-
-
-
 /* -------Dashboard-------  */
-
 /*Header*/
 .overlay-text-dashboard {
     position:absolute;
@@ -398,7 +360,6 @@ body {
     border: none;
     cursor: pointer;
     padding: 16px 300px;
-
 
   }
   
@@ -455,7 +416,6 @@ body {
     font-weight: 700;
 }
 
-
 .quarterprogress {
     background-color: #ffffff;
 }
@@ -495,12 +455,6 @@ body {
     
 }
 
-
-
-
-
-
-
 #quarter1 {
     background-color: #000000;
     padding: 20px;
@@ -527,9 +481,6 @@ body {
     padding: 20px;
 }
 
-
-
-
 #quarter4 {
     background-color: #ffffff;
     padding: 20px;
@@ -550,8 +501,6 @@ body {
     padding-top: 20px;
     color: black;
 }
-
-
 
 #tablequarter13 {
     border-collapse: collapse;
@@ -579,9 +528,6 @@ body {
     color: #ffffff;
 }
 
-
-
-
 #tablequarter24 {
     border-collapse: collapse;
     width: 100%;
@@ -607,26 +553,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------faq-------  */
 #faqq li {
     margin-bottom: 50px;
@@ -638,8 +564,6 @@ body {
     margin-bottom: 50px;
     font-weight: 500;
 }
-
-
 
 
 .summaryfaq {
@@ -659,10 +583,6 @@ body {
     font-size: 20px;
 
 }
-
-
-
-
 
 
 /* -------Blog-------  */
@@ -779,8 +699,6 @@ body {
 }
 
 
-
-
 /*blog page*/
 
 .backtoblog {
@@ -872,6 +790,7 @@ body {
     height: 250px;
     float: left;
 }
+
 
 /*blog page: study choice*/
 #studychoice h3 {
